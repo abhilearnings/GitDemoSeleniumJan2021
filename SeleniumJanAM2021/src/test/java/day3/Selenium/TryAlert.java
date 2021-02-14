@@ -21,6 +21,7 @@ public class TryAlert {
 		driver.findElement(By.id("prompt")).click();
 		driver.switchTo().alert().sendKeys("Abhi");
 		driver.switchTo().alert().accept();
+		driver.close();
 		
 
 	}
