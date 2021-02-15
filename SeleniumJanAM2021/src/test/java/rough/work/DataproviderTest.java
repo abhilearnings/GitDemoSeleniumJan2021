@@ -29,7 +29,7 @@ public class DataproviderTest {
 		// we want to write some code which will take the test data from xls ;
 		
 		ExcelReader excel = new ExcelReader(System.getProperty("user.dir") + "\\Resources\\Testdata\\Testdata.xlsx");
-		String sheetName = "Sheet1";
+		String sheetName = "Sheet1";;
 		int rowNum = excel.getRowCount(sheetName);
 		int colNum = excel.getColumnCount(sheetName);
 		System.out.println("Data---" + excel.getCellData(sheetName, 0, 1));
@@ -41,7 +41,7 @@ public class DataproviderTest {
 			}
 		}
 		
-		return data;;
+		return data;
 	}
 
 }
